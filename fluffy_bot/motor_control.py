@@ -37,7 +37,7 @@ class MotorControl(Motors):
                 self.set_speed(key["vel"])
                 self.set_position(pos)
                 delta = [100]*len(self.ids)
-                while (max(delta) > 12):
+                while (max(delta) > 10):
                     c_p = self.get_positions()
                     # print(c_p)
                     for i in range (len(self.ids)):
